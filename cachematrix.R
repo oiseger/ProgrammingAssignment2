@@ -1,5 +1,6 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Function makeCacheMatrix to cache a calculated value together with a matrix (say the inverse)
+## And cacheSolve to calculate and store in that cache the result of the solve() of the matrix
+
 
 ## function caches a matrix' inverse
 ## The inverse has to be set externally by calling $setinverse()
