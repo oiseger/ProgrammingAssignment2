@@ -20,3 +20,12 @@ try(matSolved <- cacheSolve(mat1))
 mat1 <- makeCacheMatrix(data.frame())
 try(matSolved <- cacheSolve(mat1))
 
+m1 <- matrix(c(10,20,3,4),2,2)
+solve(m1)
+
+m2 <- matrix(c(1,2,60,100),2,2)
+solve(m1,m2)
+
+> cm <- makeCacheMatrix(m1)
+cacheSolve(cm)
+cacheSolve(cm, m2)
