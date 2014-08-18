@@ -41,13 +41,8 @@ makeCacheMatrix <- function(x = matrix()) {
 
 }
 
-## Return the inverse of the matrix in a makeCacheMatrix object and cache the value 
-## in the same object if not set.
-## 
-## Todo: decide (read in assignment) whether this is purely intended for the inverse
-##       or the more general solve() case.
-##       And document so
-
+## Return the inverse of the matrix stored in a makeCacheMatrix object 
+## and cache the value in the same object if not set.
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
         i <- x$getinverse()
